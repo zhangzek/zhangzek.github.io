@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="My New Hugo Site">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://zhangzek.github.io/">
+    <meta property="twitter:image" content="https://zhangzek.github.io/" />
+    
+
+    
+    <meta name="title" content="雷宸静小朋友" />
+    <meta property="og:title" content="雷宸静小朋友" />
+    <meta property="twitter:title" content="雷宸静小朋友" />
+    
+
+    
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="twitter:description" content="" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>雷宸静小朋友-</title>
+
+    <link rel="canonical" href="/post/blog/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+    
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+</head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">My New Hugo Site</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    
+		    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>雷宸静小朋友</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                                My New Hugo Site
+                         
+                        on 
+                        Thursday, August 29, 2019
+                        
+                        
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                
+                
+                <p>以下为测试代码:</p>
+
+<p>`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company:
+// Engineer: ZHangZEKUN
+//
+// Create Date: 2019/01/30 13:01:16
+// Design Name:
+// Module Name: fft4_st1
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+//
+//////////////////////////////////////////////////////////////////////////////////</p>
+
+<p>module fft4_st1(
+//input
+                clk,
+                rst_n,
+                data_in_valid,
+                data_in_re,
+                data_in_im,
+//output
+                data_out_valid_st1,
+                data_out_re_st1,
+                data_out_im_st1
+                );</p>
+
+<p>//parameter declaration
+parameter DATAWIDTH = 10  ;
+parameter ADDRWIDTH = 6   ;
+parameter WORDDEPTH = 64  ;
+parameter MULTIPLICAND_WIDTH  = 10;
+parameter MULTIPLICATOR_WIDTH = 10;
+parameter PRODUCT_WIDTH       = 10;</p>
+
+<p>input                         clk;
+input                         rst_n;
+input                         data_in_valid;
+input   [DATAWIDTH-1:0]       data_in_re;
+input   [DATAWIDTH-1:0]       data_in_im;</p>
+
+<p>output                        data_out_valid_st1;
+output  [DATAWIDTH-1:0]       data_out_re_st1;
+output  [DATAWIDTH-1:0]       data_out_im_st1;</p>
+
+<p>//output<br />
+reg                           data_out_valid_st1;
+reg     [DATAWIDTH-1:0]       data_out_re_st1;
+reg     [DATAWIDTH-1:0]       data_out_im_st1;</p>
+
+<p>//rom
+wire    [17:0]                rom_out    ;</p>
+
+<p>//fft4
+wire                          data_out_valid_st1_tmp;
+reg                           data_out_valid_st1_tmp_lat1;
+wire    [DATAWIDTH-1:0]       re_dout_fft4_st1;
+wire    [DATAWIDTH-1:0]       im_dout_fft4_st1;
+reg     [DATAWIDTH-1:0]       re_dout_fft4_st1_lat1      ;<br />
+reg     [DATAWIDTH-1:0]       im_dout_fft4_st1_lat1      ;<br />
+reg     [DATAWIDTH-1:0]       re_dout_fft4_st1_neg;
+reg     [DATAWIDTH-1:0]       re_dout_fft4_st1_neg_lat1  ;</p>
+
+<p>//c_mul
+wire    [DATAWIDTH-1:0]       product_re;
+wire    [DATAWIDTH-1:0]       product_im;
+reg     [DATAWIDTH-1:0]       multiplicand_re  ;
+reg     [DATAWIDTH-1:0]       multiplicand_im  ;
+reg     [DATAWIDTH-1:0]       data_out_re_st1_tmp ;
+reg     [DATAWIDTH-1:0]       data_out_im_st1_tmp ;</p>
+
+<p>//tw
+reg     [2:0]                 address;
+reg     [5:0]                 address_tmp;
+wire    [5:0]                 add_360c;
+wire    [4:0]                 add_360map;
+wire    [4:0]                 add_180c;
+wire    [3:0]                 add_180map;
+wire    [3:0]                 add_90c;
+wire    [3:0]                 add_90map;
+reg                           add_180map_lat1;
+reg     [5:0]                 cnt64_twd;
+reg     [5:0]                 cnt64_twd_lat1;
+reg                           signcos1      ;
+reg                           signsin1      ;
+wire    [8:0]                cos1_tmp  ;
+wire    [8:0]                sin1_tmp  ;
+wire    [9:0]                cos1      ;
+wire    [9:0]                sin1      ;</p>
+
+<p>always @(posedge clk or negedge rst_n)
+  if(!rst_n)
+    data_out_valid_st1 &lt;= 1&rsquo;b0;
+  else
+    data_out_valid_st1 &lt;= data_out_valid_st1_tmp_lat1;</p>
+
+<p>always @(posedge clk or negedge rst_n)
+  if(!rst_n)
+    data_out_valid_st1_tmp_lat1 &lt;= 1&rsquo;b0;
+  else
+    data_out_valid_st1_tmp_lat1 &lt;= data_out_valid_st1_tmp;</p>
+
+<p>always @(posedge clk or negedge rst_n)
+begin
+  if(!rst_n)
+    data_out_re_st1 &lt;= 10&rsquo;b0;
+  else
+    data_out_re_st1 &lt;= data_out_re_st1_tmp;
+end</p>
+
+<p>always @(posedge clk or negedge rst_n)
+begin
+  if(!rst_n)
+    data_out_im_st1 &lt;= 10&rsquo;b0;
+  else
+    data_out_im_st1 &lt;= data_out_im_st1_tmp;
+end</p>
+
+<p>always @(posedge clk or negedge rst_n)
+  if(!rst_n)
+    cnt64_twd &lt;= 6&rsquo;d0;
+  else if(data_out_valid_st1_tmp==1&rsquo;b1)
+    cnt64_twd &lt;= cnt64_twd + 1&rsquo;b1;</p>
+
+<p>always @(posedge clk or negedge rst_n)
+begin
+ if(!rst_n)
+   cnt64_twd_lat1 &lt;= 6&rsquo;d0;
+ else
+   cnt64_twd_lat1 &lt;= cnt64_twd;
+end</p>
+
+<p>//*******************************************************************************
+//twiddle factor address generation
+//assign cnt16_twd_minus1 = cnt16_twd - 1&rsquo;b1;
+always @(cnt64_twd)
+begin
+  address_tmp = 6&rsquo;d0;
+  case(cnt64_twd[5:4])<br />
+    2&rsquo;d0  :  address_tmp = 6&rsquo;d0;                                              //0
+    2&rsquo;d1  :  address_tmp = {1&rsquo;b0,cnt64_twd[3:0],1&rsquo;b0};                        //2*
+    2&rsquo;d2  :  address_tmp = {2&rsquo;b0,cnt64_twd[3:0]};                             //1*
+    2&rsquo;d3  :  address_tmp = {2&rsquo;b0,cnt64_twd[3:0]}+{1&rsquo;b0,cnt64_twd[3:0],1&rsquo;b0};  //3*
+  endcase
+end</p>
+
+<p>//address mapping
+//map 360 to 180
+assign add_360c   = 7&rsquo;d64 - address_tmp;
+assign add_360map = (address_tmp[5] == 1&rsquo;b1) ? add_360c[4:0] : address_tmp[4:0];
+//map 180 to 90
+assign add_180c   = 6&rsquo;d32 - add_360map;
+assign add_180map = (add_360map[4] == 1&rsquo;b1) ? add_180c[3:0] : add_360map[3:0];
+//map 90 to 45
+assign add_90c    = 5&rsquo;d16 - add_180map;
+assign add_90map = (add_180map[3] == 1&rsquo;b1) ? add_90c : add_180map; // 0-8</p>
+
+<p>always@(add_90map)
+ if(add_90map == 4&rsquo;d0)
+   address = 3&rsquo;d0;
+ else
+   address = add_90map - 1&rsquo;b1;</p>
+
+<p>//map information to determine the cos and sin value
+//the signal p1/2/3/4_add_180map need to be delayed for 1 clk cycle to sync with 1-cycle delayed ROM output
+always @(posedge clk or negedge rst_n)
+begin
+  if(rst_n == 1&rsquo;b0)
+    add_180map_lat1 &lt;= 1&rsquo;b0;
+  else
+    add_180map_lat1 &lt;= add_180map[3];
+end</p>
+
+<p>assign cos1_tmp = (add_180map_lat1 == 1&rsquo;b1) ? rom_out[8 :0 ] : rom_out[17:8 ];
+assign sin1_tmp = (add_180map_lat1 == 1&rsquo;b1) ? rom_out[17:8] : rom_out[ 8:0 ];</p>
+
+<p>//Sign bit to indicate the quadrant
+//signcos == 1,complement;signcos == 0,original
+//use register to match timing of rom out(need 1 clock cycle for output valid).
+always @(posedge clk or negedge rst_n)
+begin
+  if(rst_n == 1&rsquo;b0)
+    signcos1 &lt;= 1&rsquo;b0;
+  else
+      if((address_tmp[5:4] == 2&rsquo;b00) || (address_tmp[5:4] == 2&rsquo;b11))
+        signcos1 &lt;= 1&rsquo;b0;
+      else
+        signcos1 &lt;= 1&rsquo;b1;
+end</p>
+
+<p>always @(posedge clk or negedge rst_n)
+begin
+  if(rst_n == 1&rsquo;b0)
+    signsin1 &lt;= 1&rsquo;b0;
+  else
+    signsin1 &lt;= (address_tmp[5] == 1&rsquo;b1) ? 1&rsquo;b0 : 1&rsquo;b1;</p>
+
+<p>end</p>
+
+<p>assign cos1 = (signcos1 == 1&rsquo;b0) ? {1&rsquo;b0, cos1_tmp} : {~{1&rsquo;b0, cos1_tmp} + 1&rsquo;b1};
+assign sin1 = (signsin1 == 1&rsquo;b0) ? {1&rsquo;b0, sin1_tmp} : {~{1&rsquo;b0, sin1_tmp} + 1&rsquo;b1};</p>
+
+<p>//twiddle factor multiplication
+always @(re_dout_fft4_st1)
+begin
+  if(re_dout_fft4_st1 == {1&rsquo;b1, {(DATAWIDTH-1){1&rsquo;b0}}})
+    re_dout_fft4_st1_neg = {1&rsquo;b0, {(DATAWIDTH-1){1&rsquo;b1}}};
+  else
+    re_dout_fft4_st1_neg = ~re_dout_fft4_st1 + 1&rsquo;b1;
+end</p>
+
+<p>always @(posedge clk or negedge rst_n)
+begin
+ if(!rst_n)
+   re_dout_fft4_st1_lat1 &lt;= {DATAWIDTH{1&rsquo;b0}};
+ else
+   re_dout_fft4_st1_lat1 &lt;= re_dout_fft4_st1;
+end</p>
+
+<p>always @(posedge clk or negedge rst_n)
+begin
+ if(!rst_n)
+   im_dout_fft4_st1_lat1 &lt;= {DATAWIDTH{1&rsquo;b0}};
+ else
+   im_dout_fft4_st1_lat1 &lt;= im_dout_fft4_st1;
+end</p>
+
+<p>always @(posedge clk or negedge rst_n)
+begin
+ if(!rst_n)
+   re_dout_fft4_st1_neg_lat1 &lt;= {DATAWIDTH{1&rsquo;b0}};
+ else
+   re_dout_fft4_st1_neg_lat1 &lt;= re_dout_fft4_st1_neg;
+end</p>
+
+<p>always @(cnt64_twd_lat1 or re_dout_fft4_st1_lat1 or im_dout_fft4_st1_lat1 or re_dout_fft4_st1_neg_lat1 or product_re or product_im)
+begin
+  //nk = 0*(0-7) = 0 &lt;=&gt; TW = 1
+  //nk = 4*0     = 0 &lt;=&gt; TW = 1
+  if((cnt64_twd_lat1[3:0] == 4&rsquo;b0)||(cnt64_twd_lat1[5:4] == 2&rsquo;d0))<br />
+    begin
+      multiplicand_re = {DATAWIDTH{1&rsquo;b0}};
+      multiplicand_im = {DATAWIDTH{1&rsquo;b0}};
+      data_out_re_st1_tmp = re_dout_fft4_st1_lat1  ;
+      data_out_im_st1_tmp = im_dout_fft4_st1_lat1  ;
+    end
+  //nk = 4<em>4     = 16 &lt;=&gt; TW = (-j)
+  else if(cnt64_twd_lat1 == 6&rsquo;d24)<br />
+      begin
+        multiplicand_re  = {DATAWIDTH{1&rsquo;b0}}  ;
+        multiplicand_im  = {DATAWIDTH{1&rsquo;b0}}  ;
+        data_out_re_st1_tmp = im_dout_fft4_st1_lat1      ;
+        data_out_im_st1_tmp = re_dout_fft4_st1_neg_lat1  ;
+      end
+  //cnt16_twd_lat1 even: nk=0</em>(cnt16/2)         =0
+  //cnt16_twd_lat1 odd : nk=4*((cnt16_twd_lat1-1)/2)=(cnt16_twd_lat1-1)&lt;&lt;1
+  else<br />
+    begin
+      multiplicand_re  = re_dout_fft4_st1_lat1 ;
+      multiplicand_im  = im_dout_fft4_st1_lat1 ;
+      data_out_re_st1_tmp = product_re;
+      data_out_im_st1_tmp = product_im;
+    end
+end</p>
+
+<p>//instantiation</p>
+
+<p>bu4_st1  #(DATAWIDTH)   u_bu4_st1(
+//input
+                                   .clk(clk),
+                                   .rst_n(rst_n),
+                                   .data_in_valid(data_in_valid),
+                                   .data_in_re(data_in_re),
+                                   .data_in_im(data_in_im),
+//output
+                                   .data_out_valid(data_out_valid_st1_tmp),
+                                   .data_out_re(re_dout_fft4_st1),
+                                   .data_out_im(im_dout_fft4_st1)
+                                   );</p>
+
+<p>twd_fac_multiplier10   u_twd_fac_multiplier10_st1(
+//input<br />
+                                             .multiplicand_re(multiplicand_re),
+                                             .multiplicand_im(multiplicand_im),
+                                             .multiplicator_re(cos1),
+                                             .multiplicator_im(sin1),
+//output<br />
+                                             .product_re(product_re),
+                                             .product_im(product_im)
+                                             );</p>
+
+<p>//ROM
+coef_rom_st1 u_coef_rom_st1(
+//inputs
+                   .clk     (clk       ),
+                   .rst_n   (rst_n     ),
+                   .add     (address),<br />
+//outputs<br />
+                   .out     (rom_out  )
+                   );</p>
+
+<p>endmodule</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    
+                    
+                    
+                    
+
+                    
+
+		    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; My New Hugo Site 2019
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+</body>
+</html>
